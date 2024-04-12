@@ -6,7 +6,7 @@
 - Stage One: Create a working Webhook Receiver server code.
 - Move functions into a module keeping all code in function calls.
 - Create a non-proprietary version with no information on our systems.
-- All other code will not be published the public repo.
+- All other code will not be published to the public repo.
 
 
 ### test_request.py

@@ -6,7 +6,7 @@ new_hire_data = {
     "companyName": "Garner Group",
     "employeeAddressLine1": "1060 W Addison St",
     "employeeAddressLine2": "",
-    "employeeBadgeClockNumber": "4321"
+    "employeeBadgeClockNumber": "4321",
     "employeeCity": "Chicago",
     "employeeCostCenter1": "11 - Software Development",
     "employeeCostCenter2": "22 - Director 2",

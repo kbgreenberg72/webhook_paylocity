@@ -1,28 +1,21 @@
-from flask import Flask, request
-import json
+from packageModule import flask_functions
 
-app = Flask(__name__)
+#App creation
+app = flask_functions.app_creation()
 
+#Routes
 @app.route("/Post/v2/companies/<companyID>/employees", methods=['POST'])
-def add_new_employee(companyID):
-    data = request.get_json()
-    print(json_dump(data))
-    return "ok", 200
+def pass_new_employee(companyID):
+    return flask_functions.add_new_employee(companyID)
 
 @app.route("/Post/v2/companies/<companyID>/employees/<employeeId>", methods=['POST'])
-def update_employee(companyID, employeeId):
-    data = request.get_json()
-    print(json_dump(data))
-    return "ok", 200
+def pass_update_employee(companyID, employeeId):
+    return flask_functions.update_employee(companyID, employeeId)
 
-def json_dump(data):
-    return json.dumps(data, indent=4)
-
-
+#Main Function
 def main():
     app.run(port=5000, debug=True)
-    
-    
 
+#Only runs if this file is the main file
 if __name__ == '__main__':
     main()

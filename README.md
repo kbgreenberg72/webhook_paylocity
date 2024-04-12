@@ -8,6 +8,11 @@
 - Create a non-proprietary version with no information on our systems.
 - All other code will not be published to the public repo.
 
+### packageModule
+##### Used to store action functions that are simply called within each other or via the main functions routes. We do not want a hard to read main function and this allows us to keep the program clean.
+
+#### flask_functions.py
+##### Used for flask related functions. These handle the json api requests from Paylocity as well as flask related activities. Most of the json manipulation will also occur in these functions.
 
 ### test_request.py
 ##### This is the main program for testing code throughout the deployment of this project.

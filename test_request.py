@@ -104,7 +104,7 @@ employee_term_data = {
 
 url = "http://127.0.0.1:5000/Post/v2/companies/1/employees"
 
-response = requests.post(url, json=employee_change_data)
+response = requests.post(url, json=new_hire_data)
 
 print(f"Status Code: {response.status_code}")
 print(f"Response Test: {response.text}")
